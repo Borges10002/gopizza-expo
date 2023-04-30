@@ -1,0 +1,8 @@
+convert a project to typescript 
+   new file at the root  tsconfig.json
+
+ exec at the terminal
+   expo start
+
+puglis for sister-in-law to past 
+  yarn add babel-plugin-module-resolver -D
