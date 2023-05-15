@@ -4,5 +4,19 @@ convert a project to typescript
  exec at the terminal
    expo start
 
-puglis for sister-in-law to past 
+puglis for sister-in-law to past -path map reduzir o tamnho do caminho da importacao
   yarn add babel-plugin-module-resolver -D
+
+puglis for fonts 
+  expo install @expo-google-fonts/dm-sans 
+  expo install @expo-google-fonts/dm-serif-display
+
+puglis for loading 
+  expo install expo-app-loading
+
+puglis for view 
+  yarn add styled-components
+  yarn add @types/styled-components-react-native -D
+*-
+puglis for gradient 
+  npx expo install expo-linear-gradient
