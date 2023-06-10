@@ -20,3 +20,17 @@ puglis for view
 *-
 puglis for gradient 
   npx expo install expo-linear-gradient
+
+puglis for iphone 
+ yarn add react-native-iphone-x-helper
+
+puglis of firebase
+  yarn add @react-native-firebase/app
+  yarn add @react-native-firebase/firestore
+  yarn add @react-native-firebase/auth
+  yarn add @react-native-firebase/storage
+
+puglis of imagepicker
+     https://docs.expo.dev/versions/latest/sdk/imagepicker/
+     https://github.com/expo/expo/tree/sdk-48/packages/expo-image-picker
+npx expo install expo-image-picker

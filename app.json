@@ -3,6 +3,22 @@
     "name": "gopizza",
     "slug": "gopizza",
     "version": "1.0.0",
-    "assetBundlePatterns": ["**/*"]
+    "assetBundlePatterns": ["**/*"],
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.gopizza",
+      "googleServicesFile": "./google-services.json"
+    },
+    "ios": {
+      "bundleIdentifier": "com.gopizza",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    }
   }
 }

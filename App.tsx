@@ -9,6 +9,8 @@ import AppLoading from "expo-app-loading";
 
 import theme from "./src/theme";
 import { SignIn } from "./src/screens/SignIn";
+import { AuthProvider } from "./src/hooks/auth";
+import { Product } from "./src/screens/Product";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,7 +25,9 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar style='light' translucent backgroundColor='transparent' />
-      <SignIn />
+      <AuthProvider>
+        <Product />
+      </AuthProvider>
     </ThemeProvider>
   );
 }
