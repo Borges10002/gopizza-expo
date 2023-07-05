@@ -11,7 +11,11 @@ import {
   Greeting,
   GreetingEmoji,
   GreetingText,
+  MenuHeader,
+  MenuItemsNumber,
+  Title,
 } from "./styles";
+import { Search } from "../../components/Search";
 
 export function Home() {
   const { COLORS } = useTheme();
@@ -28,6 +32,13 @@ export function Home() {
           <MaterialIcons name='logout' color={COLORS.TITLE} size={24} />
         </TouchableOpacity>
       </Header>
+
+      <Search onSearch={() => {}} onClear={() => {}} />
+
+      <MenuHeader>
+        <Title>Cardápio</Title>
+        <MenuItemsNumber>10 pizzas</MenuItemsNumber>
+      </MenuHeader>
     </Container>
   );
 }
