@@ -1,17 +1,15 @@
+import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { ThemeProvider } from "styled-components/native";
-import { StatusBar } from "expo-status-bar";
 
 import { DMSans_400Regular, useFonts } from "@expo-google-fonts/dm-sans";
 import { DMSerifDisplay_400Regular } from "@expo-google-fonts/dm-serif-display";
 
 import AppLoading from "expo-app-loading";
 
-import theme from "./src/theme";
-import { SignIn } from "./src/screens/SignIn";
 import { AuthProvider } from "./src/hooks/auth";
-import { Product } from "./src/screens/Product";
 import { Home } from "./src/screens/Home";
+import theme from "./src/theme";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,7 +23,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar style='light' translucent backgroundColor='transparent' />
+      <StatusBar style="light" translucent backgroundColor="transparent" />
       <AuthProvider>
         <Home />
       </AuthProvider>

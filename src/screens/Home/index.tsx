@@ -16,6 +16,7 @@ import {
   Title,
 } from "./styles";
 import { Search } from "../../components/Search";
+import { ProductCard } from "../../components/ProductCard";
 
 export function Home() {
   const { COLORS } = useTheme();
@@ -29,7 +30,7 @@ export function Home() {
         </Greeting>
 
         <TouchableOpacity>
-          <MaterialIcons name='logout' color={COLORS.TITLE} size={24} />
+          <MaterialIcons name="logout" color={COLORS.TITLE} size={24} />
         </TouchableOpacity>
       </Header>
 
@@ -39,6 +40,15 @@ export function Home() {
         <Title>Cardápio</Title>
         <MenuItemsNumber>10 pizzas</MenuItemsNumber>
       </MenuHeader>
+
+      <ProductCard
+        data={{
+          id: "1",
+          name: "Pizza",
+          description: "dfadsfasdfdsafdsf",
+          photo_url: "https://avatars.githubusercontent.com/u/32522338?v=4",
+        }}
+      />
     </Container>
   );
 }
